@@ -1,0 +1,298 @@
+.topnav {
+  background-color: white;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  color: #686d76;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #fa7f72;
+}
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+}
+
+.button {
+  color: white;
+}
+
+.button:hover {
+  color: green;
+}
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 450px}
+
+/* Set black background color, white text and some padding */
+.bottom {
+  background-color: grey;
+}
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+  .row.content {height:auto;}
+}
+
+/** .search-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: white;
+  height: 50px;
+  border-radius: 50px;
+  padding: 5px;
+}
+
+.search-btn {
+  background: black;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.search-text {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.8s;
+  line-height: 40px;
+  width: 0px;
+}
+
+.search-box:hover > .search-text {
+  width: 480px;
+  padding: 0 6px;
+}
+
+.search-box:hover > .search-btn {
+  background-color: white;
+}
+
+/* body {
+  margin: 0;
+  padding: 0;
+  background: #FF0000;
+} */
+
+.navbar a.nav-item1 {
+float: right;
+padding: 6px;
+border: none;
+margin-top: 8px;
+margin-right: 16px;
+font-size: 17px;
+}
+
+.navbar a.nav-item2 {
+float: right;
+padding: 6px;
+border: none;
+margin-top: 8px;
+margin-right: 16px;
+font-size: 17px;
+}
+
+.navbar a.nav-item3 {
+float: right;
+padding: 6px;
+border: none;
+margin-top: 8px;
+margin-right: 16px;
+font-size: 17px;
+}
+
+#wave-section {
+ position: relative;
+ height: 100vh;
+ width: 100%;
+ display: flex;
+ justify-content:
+ align-items: center;
+ padding: 50px;
+  box-sizing: border-box;
+ background: linear-gradient(90deg, #FF0000, #845ec2), url(moviepopcorn.jpg);
+ background-attachment: fixed;
+ background-blend-mode: screen;
+ text-align: center;
+}
+
+#wave-section .url {}
+
+div #wave-section {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wavebottom-section {
+  text-align: center;
+}
+
+.wavetop-section {
+  max-width: 1450px;
+  text-align: center;
+}
+
+.wavepoppins-h2 {
+  font-size: 3em;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.wavepoppins-p {
+  font-size: 1.2em;
+  color: black;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+main #main-intro {
+  display: flex;
+justify-content: center;
+text-align: center;
+width: 100%;
+
+}
+
+.bottom-wave {
+  position: absolute;
+  bottom: 0;
+  left: 0
+  background-attachment: fixed;
+}
+
+/** Autocom Box **/
+
+::selection{
+  color: #fff;
+  background: #664AFF;
+}
+
+.wrapper{
+  max-width: 450px;
+  margin: 150px auto;
+}
+
+.wrapper .search-input{
+  background: #fff;
+  width: 100%;
+  border-radius: 5px;
+  position: relative;
+  box-shadow: 0px 1px 5px 3px rgba(0,0,0,0.12);
+}
+
+.search-input input{
+  height: 55px;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 0 60px 0 20px;
+  font-size: 18px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+}
+
+.search-input.active input{
+  border-radius: 5px 5px 0 0;
+}
+
+.search-input .autocom-box{
+  padding: 0;
+  opacity: 0;
+  pointer-events: none;
+  max-height: 280px;
+  overflow-y: auto;
+}
+
+.search-input.active .autocom-box{
+  padding: 10px 8px;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.autocom-box li{
+  list-style: none;
+  padding: 8px 12px;
+  display: none;
+  width: 100%;
+  cursor: default;
+  border-radius: 3px;
+}
+
+.search-input.active .autocom-box li{
+  display: block;
+}
+.autocom-box li:hover{
+  background: #efefef;
+}
+
+.search-input .icon{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  line-height: 55px;
+  font-size: 20px;
+  color: #644bff;
+  cursor: pointer;
+}
+
+/** Stars Style **/
+
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.stars-outer::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ccc;
+}
+
+.stars-inner::before {
+  content: "\f005 \f005 \f005 \f005 \f005";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #f8ce0b;
+}
+
+.stars-outer:hover {
+  color: #f8ce0b;
+}
